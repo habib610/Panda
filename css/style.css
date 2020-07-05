@@ -19,3 +19,37 @@
     padding: 9px 25px;
     cursor: pointer;
 }
+.cat1, .cat2, .cat3{
+    padding: 10px 15px;
+    border-radius: 7px;
+    margin: 5px 0;
+}
+.cat1{
+    background-image: linear-gradient(to left,#effb47 , orange 100%);
+}
+.cat2{
+    background-image: linear-gradient(to left,#df7afd , #540ff5 100%);
+}
+.cat3{
+    background-image: linear-gradient(to left, #fb97a8 , #ff1346 100%);
+}
+.catagories h1{
+    color: white;
+}
+.catagories img{
+    width: 100px;
+} 
+.card{
+    border: none;
+    box-shadow: 5px 5px 10px lightgray;
+}
+.card-footer{
+    border:none;
+    background-color:#fff;
+}
+#subscribe{
+    height: 300px;
+}
+#subscribe h6{
+    color: gray;
+}
