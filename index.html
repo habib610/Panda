@@ -6,10 +6,11 @@
     <title>Panda E-Commerce</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./Images/favIcon.png" type="image/x-icon">
 </head>
 <body>
    <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
         <a class="navbar-brand" href="#">
             <img src="./Images/logo.png" alt="">
         </a>
@@ -96,9 +97,9 @@
         </a>
       </div>
 </div>
-<div class="container catagories">
+<div class="container catagories" id="catagories">
     <div class="row">
-        <div class="col-md-4 ">
+        <div class="col-12 col-md-4">
             <div class="cat1 d-flex justify-content-between align-items-center">
                 <h1>Watch</h1>
                 <img src="./Images/categories/watch.png" >
@@ -123,8 +124,10 @@
 </div>
 <div class="container shoes" id="shoes">
     <h1>Shoes</h1>
+
     <div class="card-deck">
-        <div class="card">
+      <div class="col-12 col-md-6 col-lg-4 my-3">
+        <div class="card ">
           <img src="./Images/shoes/shoe-1.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Supply 350</h5>
@@ -133,6 +136,8 @@
             <button class="buy-now-btn">Buy Now >></button>
           </div>
         </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 my-3">
         <div class="card">
           <img src="./Images/shoes/shoe-2.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -142,6 +147,8 @@
             <button class="buy-now-btn">Buy Now >></button>
           </div>
         </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 my-3">
         <div class="card">
           <img src="./Images/shoes/shoe-3.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -152,11 +159,16 @@
           </div>
         </div>
       </div>
+
+
+  
+      </div>
 </div>
 
 <div class="container backpack" id="backpack">
     <h1>Backpack</h1>
     <div class="card-deck">
+      <div class="col-12 col-md-6 col-lg-4 my-3">
         <div class="card">
           <img src="./Images/bags/bag-1.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -168,6 +180,8 @@
             <button class="buy-now-btn">Buy Now >></button>
           </div>
         </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 my-3">
         <div class="card">
           <img src="./Images/bags/bag-2.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -179,6 +193,8 @@
             <button class="buy-now-btn">Buy Now >></button>
           </div>
         </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 my-3">
         <div class="card">
           <img src="./Images/bags/bag-3.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -187,23 +203,24 @@
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
           </div>
           <div class="card-footer">
-            <button class="buy-now-btn">Buy Now >></button>
+            <button class="buy-now-btn ">Buy Now >></button>
           </div>
         </div>
       </div>
+      </div>
 </div>
 
-<div class="container background d-flex justify-content-center align-items-center" id="subscribe">
+<div class="container-fluid background d-flex justify-content-center align-items-center" id="subscribe">
     <div>
         <h1>LETS STAY IN TOUCH</h1>
     <h6>Get updates, sales and more</h6>
-    <input type="text" class="form-control">
-    <button class="buy-now-btn">Submit</button>
+    <input type="text" placeholder="Type your message" class="form-control">
+    <button class="buy-now-btn my-2">Submit</button>
     </div>
 </div>
 
-<footer class="text-center">
-    <small> &copy;Copyright 2020, Panda Commerce. All rights reserved. Habib, Manikgonj </small>
+<footer class="text-center my-2">
+    <small> &copy;Copyright <span id="years">f</span> Panda eCommerce. All rights reserved </small>
 </footer>
 
 
@@ -212,5 +229,11 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+    <script>
+      const year = document.getElementById('years');
+      const currentYear = new Date().getFullYear()
+      year.innerText = currentYear;
+    </script>
 </body>
 </html>
